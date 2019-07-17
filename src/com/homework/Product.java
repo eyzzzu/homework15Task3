@@ -29,7 +29,7 @@ public class Product {
         return isProductInBackpack;
     }
 
-    public void setCheckProductInBackpackOrNot() {
+    public void ProductInBackpack() {
         this.isProductInBackpack = true;
     }
 

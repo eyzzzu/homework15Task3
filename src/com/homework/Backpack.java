@@ -25,7 +25,7 @@ public class Backpack {
         while (currentWeightInBackPack <= MAX_WEIGHT_IN_BACKPACK) {
             if (!checkProductInBackpack(i)) {
                 inBackPack.add(productList.get(i));
-                productList.get(i).setCheckProductInBackpackOrNot();
+                productList.get(i).ProductInBackpack();
                 currentWeightInBackPack += inBackPack.get(i).getWeight();
                 i++;
             }
