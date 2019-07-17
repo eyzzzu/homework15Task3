@@ -27,6 +27,9 @@ public class Backpack {
                 inBackPack.add(productList.get(i));
                 productList.get(i).ProductInBackpack();
                 currentWeightInBackPack += inBackPack.get(i).getWeight();
+                if (currentWeightInBackPack + productList.get(i + 1).getWeight() > MAX_WEIGHT_IN_BACKPACK){
+                    break;
+                }
                 i++;
             }
         }
